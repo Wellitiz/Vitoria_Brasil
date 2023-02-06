@@ -1,0 +1,1137 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #D9D9D9;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Inder', sans-serif;
+}
+
+
+/* Seção de Menu */
+.Topo{
+    width: 100%;
+    height: 85px;
+    background-color: #2801bd;
+    position: fixed;
+    z-index: 3;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.Menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    max-width: 1000px;
+    margin: 0px auto;
+}
+
+.Menu img{
+    width: 150px;
+}
+
+.paginas{
+    display: flex;
+    gap: 70px;
+}
+
+.paginas a{    
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+}
+
+.paginas a:hover{
+    color: #77d618;
+    transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+.Box_Fotos{
+    background-color: #2801bd;
+    padding-top: 85px;
+    padding-bottom: 50px;
+
+}
+
+#Titulo{
+    text-align: center;
+    color: white;
+
+}
+
+.Fotos{
+    display: flex;
+    max-width: 1000px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.Fotos img{
+    border: 2px solid white;
+    margin: 10px;
+    max-width: 300px;
+}
+
+.Fotos img:hover{
+    transition: 0.3s;
+    border: 5px solid white;
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Formulario */
+.FormArea{
+    color: #2801bd;
+    text-align: center;
+}
+
+.Formulario{
+    color: white;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: 1000px;
+    height: 600px;
+    border-radius: 25px;
+    background-color: #2801bd;
+    display: flex;
+}
+
+.Formulario form{
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.Formulario label{
+    font-size: 28px;
+}
+
+.Formulario input{
+    border-radius: 10px;
+    height: 40px;
+    font-size: 18px;
+}
+
+.Formulario .Area{
+    display: grid;
+    width: 400px;
+    flex-direction: column;
+    margin: 0 0 40px 0;
+}
+
+.Formulario .F1{
+    text-align: left;
+    width: 450px;
+}
+
+.Formulario .F2{
+    text-align: end;
+    width: 450px;
+    justify-content: end;
+}
+
+.Formulario textarea{
+    width: 400px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.check label{
+    font-size: 20px;
+}
+
+.check input{
+    height: 15px;
+}
+
+.botao button{
+    margin-top: 30px;
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 24px;
+}
+
+.botao button:hover{
+    background-color: #2801bd;
+    color: white;
+    border-color: white;
+    transition: 0.5s;
+}
+
+
+
+/* Contatos */
+.contatos{
+    color: white;
+    background-color: #2801bd;
+    padding: 20px 0;
+    height: 250px;
+}
+
+.camp-contato{
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.contat{
+    width: 450px;
+}
+
+.contat h3{
+    font-size: 24px;
+}
+
+.contato{
+    justify-content: left;
+    align-content: center;
+    margin: 10px 0;
+    height: 20px;
+}
+
+#contato1{
+    background: url(./Assets/Telefone.png) no-repeat;
+    background-size: 20px;
+}
+
+#contato1:hover{
+    background: url(./Assets/Telefone-verde.png) no-repeat;
+    background-size: 20px;
+}
+
+#contato2{
+    background: url(./Assets/Whatsapp.png) no-repeat;
+    background-size: 20px;
+}
+
+#contato2:hover{
+    background: url(./Assets/Whatsapp-verde.png) no-repeat;
+    background-size: 20px;
+}
+
+#contato3{
+    background: url(./Assets/E-mail.png) no-repeat;
+    background-size: 20px;
+}
+
+#contato3:hover{
+    background: url(./Assets/E-mail-verde.png) no-repeat;
+    background-size: 20px;
+}
+
+.contato a{
+    padding: 0px 30px;
+}
+
+.contatos a:link{
+    color: white;
+    text-decoration: none;
+}
+
+.contatos a:link:hover{
+    color: #77d618;
+    text-decoration: none;
+}
+
+.contatos a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.contatos a:visited:hover{
+    color: #77d618;
+    text-decoration: none;
+}
+
+.Redes{
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.ImgRedes1{
+    width: 40px;
+    height: 40px;
+    background: url(./Assets/Facebook.png);
+    background-size: 40px 40px;
+}
+
+.ImgRedes1:hover{
+    width: 40px;
+    height: 40px;
+    background: url(./Assets/Facebook-verde.png);
+    background-size: 40px 40px;
+    transform: translate(-2px, -2px);
+    transition: 0.3s;
+}
+
+.ImgRedes2{
+    width: 40px;
+    height: 40px;
+    background: url(./Assets/Instagram.png);
+    background-size: 40px 40px;
+}
+
+.ImgRedes2:hover{
+    width: 40px;
+    height: 40px;
+    background: url(./Assets/Instagram-verde.png);
+    background-size: 40px 40px;
+    transform: translate(-2px, -2px);
+    transition: 0.3s;
+}
+
+.ImgRedes3{
+    width: 40px;
+    height: 40px;
+    background: url(./Assets/Linkedin.png);
+    background-size: 40px 40px;
+}
+
+.ImgRedes3:hover{
+    width: 40px;
+    height: 40px;
+    background: url(./Assets/Linkedin-verde.png);
+    background-size: 40px 40px;
+    transform: translate(-2px, -2px);
+    transition: 0.3s;
+}
+
+.endereco{
+    width: 450px;
+    text-align: end;
+    font-size: 20px;
+}
+
+.endereco h3{
+    font-size: 24px;
+}
+
+.endereco img{
+    width: 40px;
+}
+
+
+
+/* Copy */
+.copy{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    background-color: #1E1E1E;
+}
+
+.copy h4{
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px){
+    .Menu{
+        justify-content: center;
+        gap:50px;
+    }
+
+    .paginas{
+        gap: 30px;
+    }
+
+    .foto1 img{
+        width: 100%;
+    }
+
+    .NS2{
+        width: 90%;
+    }
+
+    .NS2 h3{
+        font-size: 26px;
+    }
+    
+    .NS2 p{
+        font-size: 16px;
+        width: 65%;
+    }
+
+    .Ser1{
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .Ser2{
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .Ser3{
+        width: 90%;
+        margin: 20px auto;
+    }
+    
+    .Ser4{
+        width: 90%;
+        gap: 50px;
+    }
+
+
+    .BlocoS{
+        width: 150px;
+    }
+    
+    .BlocoS h3{
+        margin:10px 10px;
+        font-size:12px;
+    }
+    
+    .BlocoS p{
+        font-size: 12px;
+        margin: 0 20px;
+    }
+    
+    .Img-Ser{
+        width: 100%;
+    }
+
+    .Servicos_Nomes{
+        width: 150px;
+        height: 130px;
+    }
+
+    .S2{
+        width: 90%;
+    }
+    
+    .S2 h3{
+        font-size: 26px;
+        text-align: end;
+    }
+    
+    .S2 p{
+        font-size: 16px;
+        width: 65%;
+    }
+
+    .parcei{
+        width: 90%;
+    }
+    
+    .parc{
+        width: 80px;
+    }
+    
+    .parc img{
+        max-width: 80px;
+    }
+
+    .container{
+        width: 90%;
+    }
+    
+    .container .card{
+        padding: 10px;
+    }
+        
+    .container .card .face{
+        width: 200px;
+        height: 150px;
+    }
+    
+    .container .card .face.face1{
+        background: green;
+        transform: translateY(0px);
+    }
+    
+    .container .card .face.face1 .content{
+        opacity: 1;
+    }
+    
+    .container .card .face.face1 .content img{
+        max-width: 80px;
+    }
+    
+    .container .card .face.face1 .content h3{
+        margin: 10px 0 0;
+        padding: 0;
+        color: #fff;
+        text-align: center;
+        font-size: 1.5em;
+    }
+    
+    .container .card .face.face2{
+        transform: translateY(0px);
+        text-align: center;
+    }
+    
+    .container .card .face.face2 .content p{
+        font-size: 12px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .valores .val{
+        width: 90%;
+    }
+    
+    .val1 {
+        gap: 10px;
+    }
+    
+    .val2 {
+        gap: 10px;
+    }
+
+    .valor{
+        width: 45%;
+    }
+    
+    .valor h3{
+        color: #343E8B;
+        font-size: 16px;
+    }
+    
+    .camp-contato{
+        width: 90%;
+    }
+
+    .contat{
+        width: 43%;
+
+    }
+    .endereco{
+        width: 43%;
+
+    }
+}
+
+@media screen and (max-width:700px){
+    .Topo{
+        height: 50px;
+    }
+
+    .Menu{
+        gap:20px;
+        height: 50px;
+    }
+
+    .Menu img{
+        width: 100px;
+    }
+
+    .paginas{
+        gap: 20px;
+    }
+
+    .paginas a{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .destaques{
+        padding: 50px 0 0 0;
+    }
+
+    .NServicos{
+        height: 150px;
+    }
+
+    .NS2 h3{
+        font-size: 18px;
+    }
+    
+    .NS2 p{
+        font-size: 10px;
+        width: 65%;
+    }
+
+    .Servicos{
+        padding: 0;
+    }
+
+    .Ser1{
+        width: 90%;
+        height: 220px;
+        margin: 10 auto;
+        gap: 3px;
+    }
+
+    .Ser2{
+        width: 90%;
+        height: 220px;
+        margin: 10 auto;
+        gap: 3px;
+    }
+
+    .Ser3{
+        width: 90%;
+        height: 220px;
+        margin: 10 auto;
+        gap: 3px;
+    }
+    
+    .Ser4{
+        width: 90%;
+        height: 220px;
+        margin: 0 auto;
+        gap: 30px;
+    }
+
+    .BlocoS{
+        width: 110px;
+    }
+    
+    .BlocoS h3{
+        margin:10px 10px;
+        font-size:12px;
+    }
+    
+    .BlocoS p{
+        font-size: 12px;
+        margin: 0 20px;
+    }
+    
+    .Img-Ser{
+        width: 100%;
+    }
+
+    .Servicos_Nomes{
+        width: 110px;
+        height: 130px;
+    }
+
+    .Servicos_Nomes h3{
+        font-size: 10px;
+    }
+
+    .Servicos_Nomes p{
+        font-size: 10px;
+    }
+
+    .Sobre{
+        height: 200px;
+    }
+
+    .S2{
+        width: 90%;
+    }
+    
+    .S2 h3{
+        font-size: 18px;
+        text-align: end;
+    }
+    
+    .S2 p{
+        font-size: 10px;
+        width: 65%;
+    }
+
+    .parceiros{
+        height: 70px;
+    }
+
+    .parcei{
+        width: 90%;
+    }
+    
+    .parc{
+        width: 45px;
+    }
+    
+    .parc img{
+        max-width: 45px;
+    }
+
+    .container{
+        width: 90%;
+        height: 300px;
+    }
+    
+    .container .card{
+        padding: 10px;
+    }
+        
+    .container .card .face{
+        width: 130px;
+        height: 110px;
+    }
+    
+    .container .card .face.face1{
+        background: green;
+        transform: translateY(0px);
+    }
+    
+    .container .card .face.face1 .content{
+        opacity: 1;
+    }
+    
+    .container .card .face.face1 .content img{
+        max-width: 80px;
+    }
+    
+    .container .card .face.face1 .content h3{
+        font-size: 14px;
+    }
+    
+    .container .card .face.face2{
+        transform: translateY(0px);
+        text-align: center;
+        height: 160px;
+    }
+    
+    .container .card .face.face2 .content p{
+        font-size: 10px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .valores .val{
+        width: 90%;
+    }
+    
+    .val1 {
+        gap: 10px;
+    }
+    
+    .val2 {
+        gap: 10px;
+    }
+
+    .valor{
+        width: 45%;
+    }
+    
+    .valor h3{
+        color: #343E8B;
+        font-size: 14px;
+    }
+
+    .valor p{
+        font-size: 12px;
+    }
+    
+    .contatos{
+        height: 180px;
+        padding: 0;
+    }
+
+    .camp-contato{
+        width: 90%;
+    }
+
+    .camp-contato h3{
+        font-size: 12px;
+    }
+
+    .camp-contato a{
+        font-size: 10px;
+    }    
+
+    .contat{
+        width: 43%;
+    }
+
+    .ImgRedes1{
+        width: 25px;
+        height: 25px;
+        background-size: 25px;
+    }
+
+    .ImgRedes2{
+        width: 25px;
+        height: 25px;
+        background-size: 25px;
+    }
+
+    .ImgRedes3{
+        width: 25px;
+        height: 25px;
+        background-size: 25px;
+    }
+
+    .endereco{
+        width: 43%;
+
+    }
+
+    .copy{
+        height: 40px;
+    }
+    
+    .copy h5{
+        color: white;
+        text-align: center;
+        font-size: 10px;
+    }
+
+}
+
+@media screen and (max-width:500px){
+    .Topo{
+        height: 50px;
+    }
+
+    .Menu{
+        gap:10px;
+        height: 50px;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .Menu img{
+        width: 80px;
+    }
+
+    .paginas{
+        gap: 10px;
+    }
+
+    .paginas a{
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .destaques{
+        padding: 50px 0 0 0;
+    }
+
+    .NServicos{
+        height: 120px;
+    }
+
+    .NS2 h3{
+        font-size: 18px;
+    }
+    
+    .NS2 p{
+        font-size: 10px;
+        width: 65%;
+    }
+
+    .Servicos{
+        padding-top: 10px;
+    }
+
+    .Ser1{
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+        height: 180px;
+        margin: 10px auto;
+    }
+
+    .Ser2{
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+        height: 180px;
+        margin: 10px auto;
+    }
+
+    .Ser3{
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+        height: 180px;
+        margin: 10px auto;
+    }
+
+    .Ser4{
+        width: 100%;
+        height: 180px;
+        margin: 10px auto;
+        gap: 20px;
+    }
+
+    .BlocoS{
+        width: 70px;
+        margin-bottom: 0px;
+        height: 80px;
+    }
+
+    .BlocoS h3{
+        margin:0px 0px;
+        font-size:10px;
+    }
+
+    .BlocoS p{
+        font-size: 10px;
+        margin: 0 0;
+    }
+
+    .Img-Ser{
+        width: 80px;
+    }
+
+    .Img-Ser img{
+        width: 100%;
+    }
+
+    .Servicos_Nomes{
+        align-content: center;
+        margin-top: 0px;
+        padding: 0;
+        width: 80px;
+        height: 120px;
+    }
+
+    .Sobre{
+        height: 230px;
+    }
+
+    .S2{
+        display: grid;
+        text-align: center;
+        width: 90%;
+        flex-direction: column;
+    }
+    
+    .S2 h3{
+        font-size: 18px;
+        text-align: center;
+        order: 2;
+    }
+    
+    .S2 p{
+        font-size: 10px;
+        text-align: center;
+        width: 100%;
+        order: 3;
+    }
+
+    .parceiros{
+        height: 30px;
+    }
+
+    .parcei{
+        width: 90%;
+    }
+    
+    .parc{
+        width: 20px;
+    }
+    
+    .parc img{
+        width: 25px;
+    }
+
+    .container{
+        display: block;
+        width: 90%;
+        height: auto;
+    }
+    
+    .container .card{
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+        
+    .container .card .face{
+
+        width: 200px;
+        height: 110px;
+    }
+    
+    .container .card .face.face1{
+        width: 100px;
+        height: 110px;
+        background: green;
+        transform: translateY(0px);
+    }
+    
+    .container .card .face.face1 .content{
+        opacity: 1;
+    }
+    
+    .container .card .face.face1 .content img{
+        max-width: 60px;
+    }
+    
+    .container .card .face.face1 .content h3{
+        font-size: 14px;
+    }
+    
+    .container .card .face.face2{
+        transform: translateY(0px);
+        text-align: center;
+        height: 110px;
+        box-shadow: none;
+    }
+    
+    .container .card .face.face2 .content p{
+        font-size: 10px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .valores{
+        padding: 0px 0px;
+        width: 100%;
+    }
+    
+    .valores .val{
+        display: grid;
+        width: 90%;
+        margin: 0px auto;
+    }
+    
+    .val1{
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        margin: 5px 0;
+    }
+    
+    .val2{
+        display: grid;
+        justify-content: space-around;
+        text-align: center;
+        margin: 5px 0;
+    }
+    
+    .val3{
+        display: grid;
+        justify-content: space-around;
+        text-align: center;
+        margin: 5px 0;
+    }
+    
+    .valor{
+        background-color: white;
+        width: 90%;
+        margin: 0 auto;
+        padding: 0 0px;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    }
+    
+    .valor h3{
+        color: #343E8B;
+    }
+
+    .contatos{
+        height: auto;
+        padding: 0;
+    }
+
+    .camp-contato{
+        display: grid;
+        width: 90%;
+        align-content: center;
+    }
+
+    .camp-contato h3{
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .camp-contato a{
+        font-size: 10px;
+    }    
+
+    .contat{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .contato{
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .contato a{
+        padding: 0 10px;
+        width: 150px;
+    }
+
+    .Redes{
+        justify-content: center;
+    }
+
+    .ImgRedes1{
+        width: 25px;
+        height: 25px;
+        background-size: 25px;
+    }
+
+    .ImgRedes2{
+        width: 25px;
+        height: 25px;
+        background-size: 25px;
+    }
+
+    .ImgRedes3{
+        width: 25px;
+        height: 25px;
+        background-size: 25px;
+    }
+
+    .endereco{
+        justify-content: center;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 10px;
+
+    }
+
+    .copy{
+        height: 40px;
+    }
+    
+    .copy h5{
+        color: white;
+        text-align: center;
+        font-size: 10px;
+    }
+}

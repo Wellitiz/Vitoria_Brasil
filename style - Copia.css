@@ -1,0 +1,813 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #D9D9D9;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Inder', sans-serif;
+}
+
+
+
+/* Seção de Menu */
+.Topo{
+    width: 100%;
+    height: 85px;
+    background-color: #2801bd;
+    position: fixed;
+    z-index: 3;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.Menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    max-width: 1000px;
+    margin: 0px auto;
+}
+
+.Menu img{
+    width: 10vw;
+    max-height: 70px;
+}
+
+.paginas{
+    display: flex;
+    gap: 70px;
+}
+
+.paginas a{    
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.paginas a:hover{
+    color: #77d618;
+    transition: 0.3s;
+}
+
+
+
+/* Seção de Slides */
+.Slides-topo{
+    margin: 0;
+    padding: 85px 0 0 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider{
+    margin: 0 auto;
+    overflow: hidden;
+}
+ 
+.slides{
+    width: 1000%;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 10%;
+    position: relative;
+    transition: 1.5s;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+ 
+.manual-navigation{
+    position: relative;
+    width: 100%; 
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    width: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.manual-btn:hover{
+    background-color: #fff;
+}
+
+.manual-btn{
+    margin-right: 50px;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -10%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -30%;
+}
+
+#radio5:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio6:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio7:checked ~ .first{
+    margin-left: -60%;
+}
+
+#radio8:checked ~ .first{
+    margin-left: -70%;
+}
+
+#radio9:checked ~ .first{
+    margin-left: -80%;
+}
+
+#radio10:checked ~ .first{
+    margin-left: -90%;
+}
+
+
+
+/* Seção sobre nós */
+.Sobrenos{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #2801bd;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.SB{
+    display: flex;
+    color: white;
+    width: 1000px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.SB h3{
+    font-size: 36px;
+}
+
+.SB p{
+    font-size: 18px;
+    width: 650px;
+    text-align: right;
+}
+
+
+
+/* Seção de Produtos */
+.Produtos{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.Produto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Produtos h1{
+    color: #2801bd;
+    text-align: center;
+}
+
+.BlocoS{
+    max-width: 230px;
+    text-align: center;
+    align-content: center;
+    color: #2801bd;
+    margin: 10px;
+}
+
+.BlocoS:hover{
+    transform: translate(-2px, -2px);
+    transition: 0.3s;
+    color: #77d618;
+}
+
+.Img-Ser{
+    width: 240px;    
+}
+
+.Img-Ser img{
+    width: 100%;
+}
+
+.NomesProdutos{
+    width: 240px;
+}
+
+.NomesProdutos h2{
+    height: 60px;
+    margin: 0;
+}
+
+
+
+/* Seção Serviços */
+.Servicos{
+    margin: 0;
+}
+
+.Vitoria{
+    width: 100%;
+    background-color: #2801bd;
+    display: flex;
+    align-items: center;
+}
+.Vitoria img{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.Serv{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: -50;
+    background-color: #2801bd;
+}
+
+.S2{
+    display: flex;
+    color: white;
+    width: 1000px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.S2 h3{
+    font-size: 36px;
+    justify-content: end;
+    order: 3;
+}
+
+.S2 p{
+    font-size: 18px;
+    width: 450px;
+    text-align: left;
+    order: 2;
+}
+
+
+/* Parceiros */
+.parceiros{
+    display: flex;
+    justify-content: center;
+    height: 130px;
+    background-color: white;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.parcei{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1000px;
+}
+
+.parc{
+    width: 100px;
+}
+
+.parc img{
+    max-width: 98px;
+}
+
+.parc img:hover{
+    opacity: 0.8;
+    transform: translate(-2px, -2px);
+    transition: 0.5s;
+}
+
+
+
+/* Cards */
+.Inf{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    width: 1000px;
+    background-color: #77d618;
+    justify-content: space-between;
+    align-items: center;
+    height: 450px;
+}
+
+.container .card{
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+}
+
+.content{
+    padding: 10px;
+}
+
+.container .card .face{
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+.container .card .face.face1{
+    position: relative;
+    background: #2801bd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.container .card:hover .face.face1{
+    background: #77d618;
+    transform: translateY(0);
+}
+
+.container .card .face.face1 .content{
+    opacity: 0.2;
+    transition: 0.5s;
+}
+
+.container .card:hover .face.face1 .content{
+    opacity: 1;
+
+}
+
+.container .card .face.face1 .content img{
+    max-width: 100px;
+}
+
+.container .card .face.face1 .content h3{
+    margin: 10px 0 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.container .card .face.face2{
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    transform: translateY(-100px);
+    text-align: center;
+}
+
+.container .card:hover .face.face2{
+    transform: translateY(0)
+}
+
+.container .card .face.face2 .content p{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Formulario */
+.FormArea{
+    color: #2801bd;
+    text-align: center;
+}
+
+.Formulario{
+    color: white;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: 900px;
+    height: 600px;
+    border-radius: 25px;
+    background-color: #2801bd;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Formulario form{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.Formulario label{
+    font-size: 28px;
+}
+
+.Formulario input{
+    border-radius: 10px;
+    height: 40px;
+    font-size: 18px;
+}
+
+.Formulario .Area{
+    display: grid;
+    width: 400px;
+    flex-direction: column;
+    margin: 0 0 40px 0;
+}
+
+.Formulario .F1{
+    text-align: left;
+    width: 400px;
+}
+
+.Formulario .F2{
+    text-align: end;
+    width: 400px;
+    justify-content: end;
+}
+
+.Formulario textarea{
+    width: 400px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.check label{
+    font-size: 20px;
+}
+
+.check input{
+    height: 15px;
+}
+
+.botao button{
+    margin-top: 30px;
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 24px;
+}
+
+.botao button:hover{
+    background-color: #2801bd;
+    color: white;
+    border-color: white;
+    transition: 0.5s;
+}
+
+
+
+/* Contatos */
+.contatos{
+    color: white;
+    background-color: #2801bd;
+    padding: 20px 0;
+    height: 250px;
+}
+
+.camp-contato{
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.contat{
+    width: 450px;
+}
+
+.contat h3{
+    font-size: 24px;
+}
+
+.contato{
+    justify-content: left;
+    align-content: center;
+    margin: 10px 0;
+    height: 20px;
+}
+
+#contato1{
+    background: url(./Assets/Telefone.png) no-repeat;
+    background-size: 20px;
+}
+
+#contato1:hover{
+    background: url(./Assets/Telefone-verde.png) no-repeat;
+    background-size: 20px;
+}
+
+#contato2{
+    background: url(./Assets/Whatsapp.png) no-repeat;
+    background-size: 20px;
+}
+
+#contato2:hover{
+    background: url(./Assets/Whatsapp-verde.png) no-repeat;
+    background-size: 20px;
+}
+
+#contato3{
+    background: url(./Assets/E-mail.png) no-repeat;
+    background-size: 20px;
+}
+
+#contato3:hover{
+    background: url(./Assets/E-mail-verde.png) no-repeat;
+    background-size: 20px;
+}
+
+.contato a{
+    padding: 0px 30px;
+}
+
+.contatos a:link{
+    color: white;
+    text-decoration: none;
+}
+
+.contatos a:link:hover{
+    color: #77d618;
+    text-decoration: none;
+}
+
+.contatos a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.contatos a:visited:hover{
+    color: #77d618;
+    text-decoration: none;
+}
+
+.Redes{
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.ImgRedes1{
+    width: 40px;
+    height: 40px;
+    background: url(./Assets/Facebook.png);
+    background-size: 40px 40px;
+}
+
+.ImgRedes1:hover{
+    width: 40px;
+    height: 40px;
+    background: url(./Assets/Facebook-verde.png);
+    background-size: 40px 40px;
+    transform: translate(-2px, -2px);
+    transition: 0.3s;
+}
+
+.ImgRedes2{
+    width: 40px;
+    height: 40px;
+    background: url(./Assets/Instagram.png);
+    background-size: 40px 40px;
+}
+
+.ImgRedes2:hover{
+    width: 40px;
+    height: 40px;
+    background: url(./Assets/Instagram-verde.png);
+    background-size: 40px 40px;
+    transform: translate(-2px, -2px);
+    transition: 0.3s;
+}
+
+.ImgRedes3{
+    width: 40px;
+    height: 40px;
+    background: url(./Assets/Linkedin.png);
+    background-size: 40px 40px;
+}
+
+.ImgRedes3:hover{
+    width: 40px;
+    height: 40px;
+    background: url(./Assets/Linkedin-verde.png);
+    background-size: 40px 40px;
+    transform: translate(-2px, -2px);
+    transition: 0.3s;
+}
+
+.endereco{
+    width: 450px;
+    text-align: end;
+    font-size: 20px;
+}
+
+.endereco h3{
+    font-size: 24px;
+}
+
+.endereco img{
+    width: 40px;
+}
+
+
+
+/* Copy */
+.copy{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    background-color: #1E1E1E;
+}
+
+.copy h4{
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+
+@media screen and (min-width: 1600px){
+
+}
+
+@media screen and (max-width: 1060px){
+    .paginas a{    
+        font-size: 18px;
+    }
+    .Menu{
+        padding: 0 20px;
+    }
+    .SB h3{
+        font-size: 28px;
+    }
+    .SB p{
+        font-size: 16px;
+        width: 550px;
+    }
+    .S2 h3{
+        font-size: 28px;
+    }
+    .S2 p{
+        font-size: 16px;
+        width: 450px;
+    }   
+    .parc{
+        width: 80px;
+    }    
+    .parc img{
+        max-width: 80px;
+    }
+}
+
+
+@media screen and (max-width:800px){
+    .paginas{
+        gap: 50px;
+    }
+    .paginas a{    
+        font-size: 18px;
+    }
+    .Menu{
+        padding: 0 20px;
+    }
+    .Sobrenos{
+        display: grid;
+    }
+    .SB{
+        display: grid;
+        width: 100%;
+        justify-content: center;
+    }
+    .SB h3{
+        font-size: 28px;
+        text-align: center;
+    }
+    .SB p{
+        font-size: 16px;
+        width: 550px;
+        text-align: center;
+    }
+    .S2{
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    .S2 h3{
+        font-size: 28px;
+        text-align: center;
+    }
+    .S2 p{
+        font-size: 16px;
+        width: 450px;
+        text-align: center;
+    } 
+    .parcei{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:600px){
+    .paginas{
+        gap: 30px;
+    }
+    .paginas a{    
+        font-size: 16px;
+    }    
+    .Topo{
+        height: 50px;
+    }
+    .Menu{
+        height: 50px;
+        padding: 0 20px;
+    }
+    .Slides-topo{
+        padding: 50px 0 0 0;
+    }
+    .SB p{
+        width: 100%;
+    }
+    .S2 p{
+        width: 100%;
+    }
+    .parceiros{
+        height: 200px;
+    }
+
+    .parcei{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:450px){
+    .paginas{
+        gap: 20px;
+    }
+    .paginas a{    
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:350px){
+    .paginas{
+        gap: 10px;
+    }
+    .paginas a{    
+        font-size: 8px;
+    }
+    .Topo{
+        height: 30px;
+    }
+    .Menu{
+        height: 30px;
+        padding: 0 20px;
+    }
+    .Slides-topo{
+        padding: 30px 0 0 0;
+    }
+    .parceiros{
+        height: 250px;
+    }
+}
