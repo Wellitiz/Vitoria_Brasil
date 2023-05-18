@@ -10,7 +10,9 @@ body{
     font-family: 'Inder', sans-serif;
 }
 
-
+.links{
+    display: none;
+}
 
 /* Seção de Menu */
 .Topo{
@@ -58,7 +60,7 @@ body{
 /* Seção de Slides */
 .Slides-topo{
     margin: 0;
-    padding: 85px 0 0 0;
+    padding: 0 0 0 0;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -158,6 +160,7 @@ body{
 
 /* Seção sobre nós */
 .Sobrenos{
+    margin-top: -21px;
     display: flex;
     align-items: center;
     width: 100%;
@@ -418,13 +421,14 @@ body{
 .Formulario{
     color: white;
     margin: 0 auto;
-    margin-bottom: 40px;
     width: 900px;
     height: 600px;
     border-radius: 25px;
     background-color: #2801bd;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    margin-bottom: 40px;
 }
 
 .Formulario form{
@@ -667,7 +671,6 @@ body{
 
 
 @media screen and (min-width: 1600px){
-
 }
 
 @media screen and (max-width: 1060px){
@@ -704,8 +707,76 @@ body{
     .container .card .face{
         width: 220px;
     }
-}
+    .Formulario{
+        width: 100%;
+        border-radius: 0;
+    }
+    .Formulario .Area{
+        width: 100%;
+    }
+    .Formulario textarea{
+        width: 100%;
+    }
+    .Formulario .F1{
+        width: 300px;
+    }
+    
+    .Formulario .F2{
+        width: 300px;
+    }
+    .contatos{
+        height: 180px;
+    }
+    .camp-contato{
+        width: 90%;
+    }
+    .camp-contato h3{
+        font-size: 12px;
+    }
+    .camp-contato a{
+        font-size: 10px;
+    }
+    .contat{
+        width: 100%;
+    }
+    .ImgRedes1{
+        width: 25px;
+        height: 25px;
+        background-size: 25px;
+    }
+    .ImgRedes1:hover{
+        width: 25px;
+        height: 25px;
+        background-size: 25px;
+    }
 
+    .ImgRedes2{
+        width: 25px;
+        height: 25px;
+        background-size: 25px;
+    }
+    .ImgRedes2:hover{
+        width: 25px;
+        height: 25px;
+        background-size: 25px;
+    }
+
+    .ImgRedes3{
+        width: 25px;
+        height: 25px;
+        background-size: 25px;
+    }
+    .ImgRedes3:hover{
+        width: 25px;
+        height: 25px;
+        background-size: 25px;
+    }
+
+    .endereco{
+        width: 43%;
+
+    }
+}
 
 @media screen and (max-width:800px){
     .paginas{
@@ -802,6 +873,22 @@ body{
         margin: 0;
         padding: 0;
     }
+
+    .Formulario .Area{
+        width: 100%;
+    }
+    .Formulario textarea{
+        width: 100%;
+    }
+    .Formulario .F1{
+        width: 50%;
+        padding: 0 0 0 10px;
+    }
+    
+    .Formulario .F2{
+        width: 50%;
+        padding: 0 10px 0 0;
+    }
 }
 
 @media screen and (max-width:600px){
@@ -842,15 +929,14 @@ body{
         width: 90%;
         height: auto;
     }
-    
+
     .container .card{
         display: flex;
         justify-content: center;
         padding: 10px;
     }
-        
-    .container .card .face{
 
+    .container .card .face{
         width: 200px;
         height: 110px;
     }
@@ -861,30 +947,116 @@ body{
         background: #77d618;
         transform: translateY(0px);
     }
-    
     .container .card .face.face1 .content{
         opacity: 1;
     }
-    
     .container .card .face.face1 .content img{
         max-width: 60px;
     }
-    
     .container .card .face.face1 .content h3{
         font-size: 14px;
     }
-    
     .container .card .face.face2{
         transform: translateY(0px);
         text-align: center;
         height: 110px;
         box-shadow: none;
     }
-    
     .container .card .face.face2 .content p{
         font-size: 10px;
         margin: 0;
         padding: 0 10px;
+    }
+    .FormArea{
+        font-size: 12px;
+    }
+    .Formulario{
+        height: 850px;
+        padding: 10px 0;
+    }
+    .Formulario form{
+        display: grid;
+        gap: 0px;
+    }
+    .Formulario label{
+        font-size: 18px;
+    }
+    .Formulario .F1{
+        width: 90%;
+        padding: 0 10px;
+        margin: 0 auto;
+        order: 1;
+        justify-content: center;
+    }
+    
+    .Formulario .F2{
+        text-align: center;
+        width: 100%;
+        padding: 0;
+        order: 3;
+    }
+    .Formulario textarea{
+        width: 90%;
+        margin: 0 10px 0 0;
+    }
+    .contatos{
+        height: auto;
+        padding: 0;
+    }
+
+    .camp-contato{
+        display: grid;
+        width: 90%;
+        align-content: center;
+        text-align: center;
+    }
+    .camp-contato h3{
+        text-align: center;
+        font-size: 12px;
+    }
+    .camp-contato a{
+        font-size: 10px;
+    }
+    .contat{
+        width: 250px;
+        margin: 0 auto;
+    }
+    .contato{
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+    }
+    .contato a{
+        padding: 0 10px;
+        width: 250px;
+    }
+    .Redes{
+        justify-content: center;
+    }
+    .ImgRedes1{
+        width: 25px;
+        height: 25px;
+        background-size: 25px;
+    }
+    .ImgRedes2{
+        width: 25px;
+        height: 25px;
+        background-size: 25px;
+    }
+    .ImgRedes3{
+        width: 25px;
+        height: 25px;
+        background-size: 25px;
+    }
+    .endereco{
+        justify-content: center;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .endereco img{
+        width: 25px;
     }
 }
 

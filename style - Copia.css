@@ -419,7 +419,6 @@ body{
 .Formulario{
     color: white;
     margin: 0 auto;
-    margin-bottom: 40px;
     width: 900px;
     height: 600px;
     border-radius: 25px;
@@ -449,7 +448,6 @@ body{
     display: grid;
     width: 400px;
     flex-direction: column;
-    margin: 0 0 40px 0;
 }
 
 .Formulario .F1{

@@ -31,7 +31,8 @@ body{
 }
 
 .Menu img{
-    width: 150px;
+    width: 10vw;
+    max-height: 70px;
 }
 
 .paginas{
@@ -43,20 +44,13 @@ body{
     font-size: 24px;
     text-decoration: none;
     color: white;
+    text-align: center;
 }
 
 .paginas a:hover{
     color: #77d618;
     transition: 0.3s;
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -95,31 +89,6 @@ body{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Formulario */
 .FormArea{
     color: #2801bd;
@@ -129,19 +98,21 @@ body{
 .Formulario{
     color: white;
     margin: 0 auto;
-    margin-bottom: 40px;
-    width: 1000px;
+    width: 900px;
     height: 600px;
     border-radius: 25px;
     background-color: #2801bd;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 40px;
 }
 
 .Formulario form{
-    padding: 50px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+    gap: 20px;
 }
 
 .Formulario label{
@@ -163,12 +134,12 @@ body{
 
 .Formulario .F1{
     text-align: left;
-    width: 450px;
+    width: 400px;
 }
 
 .Formulario .F2{
     text-align: end;
-    width: 450px;
+    width: 400px;
     justify-content: end;
 }
 
@@ -373,127 +344,181 @@ body{
 
 
 
+@media screen and (min-width: 1600px){
+}
 
-
-
-
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1060px){
+    .paginas a{    
+        font-size: 18px;
+    }
     .Menu{
-        justify-content: center;
-        gap:50px;
+        padding: 0 20px;
     }
-
-    .paginas{
-        gap: 30px;
+    .SB h3{
+        font-size: 28px;
     }
-
-    .foto1 img{
-        width: 100%;
-    }
-
-    .NS2{
-        width: 90%;
-    }
-
-    .NS2 h3{
-        font-size: 26px;
-    }
-    
-    .NS2 p{
+    .SB p{
         font-size: 16px;
-        width: 65%;
+        width: 550px;
     }
-
-    .Ser1{
-        width: 90%;
-        margin: 20px auto;
-    }
-
-    .Ser2{
-        width: 90%;
-        margin: 20px auto;
-    }
-
-    .Ser3{
-        width: 90%;
-        margin: 20px auto;
-    }
-    
-    .Ser4{
-        width: 90%;
-        gap: 50px;
-    }
-
-
-    .BlocoS{
-        width: 150px;
-    }
-    
-    .BlocoS h3{
-        margin:10px 10px;
-        font-size:12px;
-    }
-    
-    .BlocoS p{
-        font-size: 12px;
-        margin: 0 20px;
-    }
-    
-    .Img-Ser{
-        width: 100%;
-    }
-
-    .Servicos_Nomes{
-        width: 150px;
-        height: 130px;
-    }
-
-    .S2{
-        width: 90%;
-    }
-    
     .S2 h3{
-        font-size: 26px;
-        text-align: end;
+        font-size: 28px;
     }
-    
     .S2 p{
         font-size: 16px;
-        width: 65%;
-    }
-
-    .parcei{
-        width: 90%;
-    }
-    
+        width: 450px;
+    }   
     .parc{
         width: 80px;
-    }
-    
+    }    
     .parc img{
         max-width: 80px;
     }
-
     .container{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .container .card .face{
+        width: 220px;
+    }
+    .Formulario{
+        width: 100%;
+        border-radius: 0;
+    }
+    .Formulario .Area{
+        width: 100%;
+    }
+    .Formulario textarea{
+        width: 100%;
+    }
+    .Formulario .F1{
+        width: 300px;
+    }
+    
+    .Formulario .F2{
+        width: 300px;
+    }
+    .contatos{
+        height: 180px;
+    }
+    .camp-contato{
         width: 90%;
+    }
+    .camp-contato h3{
+        font-size: 12px;
+    }
+    .camp-contato a{
+        font-size: 10px;
+    }
+    .contat{
+        width: 100%;
+    }
+    .ImgRedes1{
+        width: 25px;
+        height: 25px;
+        background-size: 25px;
+    }
+    .ImgRedes1:hover{
+        width: 25px;
+        height: 25px;
+        background-size: 25px;
+    }
+
+    .ImgRedes2{
+        width: 25px;
+        height: 25px;
+        background-size: 25px;
+    }
+    .ImgRedes2:hover{
+        width: 25px;
+        height: 25px;
+        background-size: 25px;
+    }
+
+    .ImgRedes3{
+        width: 25px;
+        height: 25px;
+        background-size: 25px;
+    }
+    .ImgRedes3:hover{
+        width: 25px;
+        height: 25px;
+        background-size: 25px;
+    }
+
+    .endereco{
+        width: 43%;
+
+    }
+}
+
+@media screen and (max-width:800px){
+    .paginas{
+        gap: 50px;
+    }
+    .paginas a{    
+        font-size: 18px;
+    }
+    .Menu{
+        padding: 0 20px;
+    }
+    .Sobrenos{
+        display: grid;
+    }
+    .SB{
+        display: grid;
+        width: 100%;
+        justify-content: center;
+    }
+    .SB h3{
+        font-size: 28px;
+        text-align: center;
+    }
+    .SB p{
+        font-size: 16px;
+        width: 550px;
+        text-align: center;
+    }
+    .S2{
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    .S2 h3{
+        font-size: 28px;
+        text-align: center;
+    }
+    .S2 p{
+        font-size: 16px;
+        width: 450px;
+        text-align: center;
+    } 
+    .parcei{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .container{
+        width: 100%;
+        justify-content: space-around;
+        height: 350px;
     }
     
     .container .card{
-        padding: 10px;
+        padding: 0px;
     }
         
     .container .card .face{
-        width: 200px;
+        width: 180px;
         height: 150px;
     }
     
     .container .card .face.face1{
-        background: green;
+        background: #77d618;
         transform: translateY(0px);
     }
     
     .container .card .face.face1 .content{
         opacity: 1;
+        /* display: block; */
     }
     
     .container .card .face.face1 .content img{
@@ -505,221 +530,10 @@ body{
         padding: 0;
         color: #fff;
         text-align: center;
-        font-size: 1.5em;
-    }
-    
-    .container .card .face.face2{
-        transform: translateY(0px);
-        text-align: center;
-    }
-    
-    .container .card .face.face2 .content p{
-        font-size: 12px;
-        margin: 0;
-        padding: 0;
-    }
-
-    .valores .val{
-        width: 90%;
-    }
-    
-    .val1 {
-        gap: 10px;
-    }
-    
-    .val2 {
-        gap: 10px;
-    }
-
-    .valor{
-        width: 45%;
-    }
-    
-    .valor h3{
-        color: #343E8B;
-        font-size: 16px;
-    }
-    
-    .camp-contato{
-        width: 90%;
-    }
-
-    .contat{
-        width: 43%;
-
-    }
-    .endereco{
-        width: 43%;
-
-    }
-}
-
-@media screen and (max-width:700px){
-    .Topo{
-        height: 50px;
-    }
-
-    .Menu{
-        gap:20px;
-        height: 50px;
-    }
-
-    .Menu img{
-        width: 100px;
-    }
-
-    .paginas{
-        gap: 20px;
-    }
-
-    .paginas a{
-        font-size: 18px;
-        text-align: center;
-    }
-
-    .destaques{
-        padding: 50px 0 0 0;
-    }
-
-    .NServicos{
-        height: 150px;
-    }
-
-    .NS2 h3{
-        font-size: 18px;
-    }
-    
-    .NS2 p{
-        font-size: 10px;
-        width: 65%;
-    }
-
-    .Servicos{
-        padding: 0;
-    }
-
-    .Ser1{
-        width: 90%;
-        height: 220px;
-        margin: 10 auto;
-        gap: 3px;
-    }
-
-    .Ser2{
-        width: 90%;
-        height: 220px;
-        margin: 10 auto;
-        gap: 3px;
-    }
-
-    .Ser3{
-        width: 90%;
-        height: 220px;
-        margin: 10 auto;
-        gap: 3px;
-    }
-    
-    .Ser4{
-        width: 90%;
-        height: 220px;
-        margin: 0 auto;
-        gap: 30px;
-    }
-
-    .BlocoS{
-        width: 110px;
-    }
-    
-    .BlocoS h3{
-        margin:10px 10px;
-        font-size:12px;
-    }
-    
-    .BlocoS p{
-        font-size: 12px;
-        margin: 0 20px;
-    }
-    
-    .Img-Ser{
-        width: 100%;
-    }
-
-    .Servicos_Nomes{
-        width: 110px;
-        height: 130px;
-    }
-
-    .Servicos_Nomes h3{
-        font-size: 10px;
-    }
-
-    .Servicos_Nomes p{
-        font-size: 10px;
-    }
-
-    .Sobre{
-        height: 200px;
-    }
-
-    .S2{
-        width: 90%;
-    }
-    
-    .S2 h3{
-        font-size: 18px;
-        text-align: end;
-    }
-    
-    .S2 p{
-        font-size: 10px;
-        width: 65%;
-    }
-
-    .parceiros{
-        height: 70px;
-    }
-
-    .parcei{
-        width: 90%;
-    }
-    
-    .parc{
-        width: 45px;
-    }
-    
-    .parc img{
-        max-width: 45px;
-    }
-
-    .container{
-        width: 90%;
-        height: 300px;
-    }
-    
-    .container .card{
-        padding: 10px;
-    }
-        
-    .container .card .face{
-        width: 130px;
-        height: 110px;
-    }
-    
-    .container .card .face.face1{
-        background: green;
-        transform: translateY(0px);
-    }
-    
-    .container .card .face.face1 .content{
-        opacity: 1;
-    }
-    
-    .container .card .face.face1 .content img{
-        max-width: 80px;
-    }
-    
-    .container .card .face.face1 .content h3{
         font-size: 14px;
+    }
+    .content{
+        padding: 0;
     }
     
     .container .card .face.face2{
@@ -734,330 +548,126 @@ body{
         padding: 0;
     }
 
-    .valores .val{
-        width: 90%;
+    .Formulario .Area{
+        width: 100%;
+    }
+    .Formulario textarea{
+        width: 100%;
+    }
+    .Formulario .F1{
+        width: 50%;
+        padding: 0 0 0 10px;
     }
     
-    .val1 {
-        gap: 10px;
+    .Formulario .F2{
+        width: 50%;
+        padding: 0 10px 0 0;
     }
-    
-    .val2 {
-        gap: 10px;
-    }
-
-    .valor{
-        width: 45%;
-    }
-    
-    .valor h3{
-        color: #343E8B;
-        font-size: 14px;
-    }
-
-    .valor p{
-        font-size: 12px;
-    }
-    
-    .contatos{
-        height: 180px;
-        padding: 0;
-    }
-
-    .camp-contato{
-        width: 90%;
-    }
-
-    .camp-contato h3{
-        font-size: 12px;
-    }
-
-    .camp-contato a{
-        font-size: 10px;
-    }    
-
-    .contat{
-        width: 43%;
-    }
-
-    .ImgRedes1{
-        width: 25px;
-        height: 25px;
-        background-size: 25px;
-    }
-
-    .ImgRedes2{
-        width: 25px;
-        height: 25px;
-        background-size: 25px;
-    }
-
-    .ImgRedes3{
-        width: 25px;
-        height: 25px;
-        background-size: 25px;
-    }
-
-    .endereco{
-        width: 43%;
-
-    }
-
-    .copy{
-        height: 40px;
-    }
-    
-    .copy h5{
-        color: white;
-        text-align: center;
-        font-size: 10px;
-    }
-
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width:600px){
+    .paginas{
+        gap: 30px;
+    }
+    .paginas a{    
+        font-size: 16px;
+    }    
     .Topo{
         height: 50px;
     }
-
     .Menu{
-        gap:10px;
         height: 50px;
-        justify-content: center;
-        gap: 30px;
+        padding: 0 20px;
     }
-
-    .Menu img{
-        width: 80px;
-    }
-
-    .paginas{
-        gap: 10px;
-    }
-
-    .paginas a{
-        font-size: 14px;
-        text-align: center;
-    }
-
-    .destaques{
+    .Slides-topo{
         padding: 50px 0 0 0;
     }
-
-    .NServicos{
-        height: 120px;
-    }
-
-    .NS2 h3{
-        font-size: 18px;
-    }
-    
-    .NS2 p{
-        font-size: 10px;
-        width: 65%;
-    }
-
-    .Servicos{
-        padding-top: 10px;
-    }
-
-    .Ser1{
-        justify-content: center;
-        gap: 20px;
-        width: 100%;
-        height: 180px;
-        margin: 10px auto;
-    }
-
-    .Ser2{
-        justify-content: center;
-        gap: 20px;
-        width: 100%;
-        height: 180px;
-        margin: 10px auto;
-    }
-
-    .Ser3{
-        justify-content: center;
-        gap: 20px;
-        width: 100%;
-        height: 180px;
-        margin: 10px auto;
-    }
-
-    .Ser4{
-        width: 100%;
-        height: 180px;
-        margin: 10px auto;
-        gap: 20px;
-    }
-
-    .BlocoS{
-        width: 70px;
-        margin-bottom: 0px;
-        height: 80px;
-    }
-
-    .BlocoS h3{
-        margin:0px 0px;
-        font-size:10px;
-    }
-
-    .BlocoS p{
-        font-size: 10px;
-        margin: 0 0;
-    }
-
-    .Img-Ser{
-        width: 80px;
-    }
-
-    .Img-Ser img{
+    .SB p{
         width: 100%;
     }
-
-    .Servicos_Nomes{
-        align-content: center;
-        margin-top: 0px;
-        padding: 0;
-        width: 80px;
-        height: 120px;
-    }
-
-    .Sobre{
-        height: 230px;
-    }
-
-    .S2{
-        display: grid;
-        text-align: center;
-        width: 90%;
-        flex-direction: column;
-    }
-    
-    .S2 h3{
-        font-size: 18px;
-        text-align: center;
-        order: 2;
-    }
-    
     .S2 p{
-        font-size: 10px;
-        text-align: center;
         width: 100%;
-        order: 3;
     }
-
     .parceiros{
-        height: 30px;
+        height: 200px;
     }
-
     .parcei{
-        width: 90%;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
     }
-    
-    .parc{
-        width: 20px;
-    }
-    
-    .parc img{
-        width: 25px;
-    }
-
     .container{
         display: block;
         width: 90%;
         height: auto;
     }
-    
     .container .card{
         display: flex;
         justify-content: center;
         padding: 10px;
     }
-        
     .container .card .face{
-
         width: 200px;
         height: 110px;
     }
-    
     .container .card .face.face1{
-        width: 100px;
+        width: 150px;
         height: 110px;
-        background: green;
+        background: #77d618;
         transform: translateY(0px);
     }
-    
     .container .card .face.face1 .content{
         opacity: 1;
     }
-    
     .container .card .face.face1 .content img{
         max-width: 60px;
     }
-    
     .container .card .face.face1 .content h3{
         font-size: 14px;
     }
-    
     .container .card .face.face2{
         transform: translateY(0px);
         text-align: center;
         height: 110px;
         box-shadow: none;
     }
-    
     .container .card .face.face2 .content p{
         font-size: 10px;
         margin: 0;
-        padding: 0;
+        padding: 0 10px;
     }
-
-    .valores{
-        padding: 0px 0px;
-        width: 100%;
+    .FormArea{
+        font-size: 12px;
     }
-    
-    .valores .val{
+    .Formulario{
+        height: 850px;
+        padding: 10px 0;
+    }
+    .Formulario form{
         display: grid;
+        gap: 0px;
+    }
+    .Formulario label{
+        font-size: 18px;
+    }
+    .Formulario .F1{
         width: 90%;
-        margin: 0px auto;
-    }
-    
-    .val1{
-        display: grid;
-        justify-content: center;
-        text-align: center;
-        margin: 5px 0;
-    }
-    
-    .val2{
-        display: grid;
-        justify-content: space-around;
-        text-align: center;
-        margin: 5px 0;
-    }
-    
-    .val3{
-        display: grid;
-        justify-content: space-around;
-        text-align: center;
-        margin: 5px 0;
-    }
-    
-    .valor{
-        background-color: white;
-        width: 90%;
+        padding: 0 10px;
         margin: 0 auto;
-        padding: 0 0px;
-        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+        order: 1;
+        justify-content: center;
     }
     
-    .valor h3{
-        color: #343E8B;
+    .Formulario .F2{
+        text-align: center;
+        width: 100%;
+        padding: 0;
+        order: 3;
     }
-
+    .Formulario textarea{
+        width: 90%;
+        margin: 0 10px 0 0;
+    }
     .contatos{
         height: auto;
         padding: 0;
@@ -1067,71 +677,85 @@ body{
         display: grid;
         width: 90%;
         align-content: center;
+        text-align: center;
     }
-
     .camp-contato h3{
         text-align: center;
         font-size: 12px;
     }
-
     .camp-contato a{
         font-size: 10px;
-    }    
-
+    }
     .contat{
-        width: 90%;
+        width: 250px;
         margin: 0 auto;
     }
-
     .contato{
         margin: 0 auto;
         text-align: center;
         justify-content: center;
     }
-
     .contato a{
         padding: 0 10px;
-        width: 150px;
+        width: 250px;
     }
-
     .Redes{
         justify-content: center;
     }
-
     .ImgRedes1{
         width: 25px;
         height: 25px;
         background-size: 25px;
     }
-
     .ImgRedes2{
         width: 25px;
         height: 25px;
         background-size: 25px;
     }
-
     .ImgRedes3{
         width: 25px;
         height: 25px;
         background-size: 25px;
     }
-
     .endereco{
         justify-content: center;
         width: 90%;
         margin: 0 auto;
         text-align: center;
         margin-bottom: 10px;
-
     }
-
-    .copy{
-        height: 40px;
+    .endereco img{
+        width: 25px;
     }
-    
-    .copy h5{
-        color: white;
-        text-align: center;
+}
+
+@media screen and (max-width:450px){
+    .paginas{
+        gap: 20px;
+    }
+    .paginas a{    
         font-size: 10px;
+    }
+}
+
+@media screen and (max-width:350px){
+    .paginas{
+        gap: 10px;
+    }
+    .paginas a{    
+        font-size: 8px;
+    }
+    .Topo{
+        height: 30px;
+    }
+    .Menu{
+        height: 30px;
+        padding: 0 20px;
+    }
+    .Slides-topo{
+        padding: 30px 0 0 0;
+    }
+    .parceiros{
+        height: 250px;
     }
 }
